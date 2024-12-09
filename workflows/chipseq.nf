@@ -524,6 +524,8 @@ workflow CHIPSEQ {
     //
     // MODULE: MultiQC
     //
+    ch_multiqc_report = Channel.empty()
+
     if (!params.skip_multiqc) {
         ch_multiqc_config        = Channel.fromPath("$projectDir/assets/multiqc_config.yml", checkIfExists: true)
         ch_multiqc_custom_config = params.multiqc_config ? Channel.fromPath( params.multiqc_config ): Channel.empty()
@@ -578,7 +580,8 @@ workflow CHIPSEQ {
         ch_multiqc_report = MULTIQC.out.report
     }
 
-    emit:multiqc_report = MULTIQC.out.report.toList() // channel: /path/to/multiqc_report.html
+    emit:
+    multiqc_report = ch_multiqc_report.toList() // channel: /path/to/multiqc_report.html
     versions       = ch_versions                 // channel: [ path(versions.yml) ]
 
 }
