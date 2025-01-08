@@ -31,8 +31,8 @@ process MULTIQC {
 
     path "preseq/*"
 
-    path 'deeptools/*'
-    path 'deeptools/*'
+    path "deeptools/*"
+    path "deeptools/*"
 
     path 'phantompeakqualtools/*'
     path 'phantompeakqualtools/*'
