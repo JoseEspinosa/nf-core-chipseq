@@ -15,9 +15,9 @@ process MULTIQC {
     path "trimgalore/fastqc/*"
     path "trimgalore/*"
 
-    path 'alignment/library/*'
-    path 'alignment/library/*'
-    path 'alignment/library/*'
+    path "alignment/library/*"
+    path "alignment/library/*"
+    path "alignment/library/*"
 
     path 'alignment/merged_library/unfiltered/*'
     path 'alignment/merged_library/unfiltered/*'
