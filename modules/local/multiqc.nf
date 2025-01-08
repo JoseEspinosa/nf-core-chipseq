@@ -44,8 +44,8 @@ process MULTIQC {
     path "macs3/annotation/*"
     path "macs3/featurecounts/*"
 
-    path 'deseq2/*'
-    path 'deseq2/*'
+    path "deseq2/*"
+    path "deseq2/*"
 
     output:
     path "*multiqc_report.html", emit: report
