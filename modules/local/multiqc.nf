@@ -11,9 +11,9 @@ process MULTIQC {
     path mqc_custom_config
     path logo
 
-    path 'fastqc/*'
-    path 'trimgalore/fastqc/*'
-    path 'trimgalore/*'
+    path "fastqc/*"
+    path "trimgalore/fastqc/*"
+    path "trimgalore/*"
 
     path 'alignment/library/*'
     path 'alignment/library/*'
