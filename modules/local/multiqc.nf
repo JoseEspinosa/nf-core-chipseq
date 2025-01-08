@@ -34,10 +34,10 @@ process MULTIQC {
     path "deeptools/*"
     path "deeptools/*"
 
-    path 'phantompeakqualtools/*'
-    path 'phantompeakqualtools/*'
-    path 'phantompeakqualtools/*'
-    path 'phantompeakqualtools/*'
+    path "phantompeakqualtools/*"
+    path "phantompeakqualtools/*"
+    path "phantompeakqualtools/*"
+    path "phantompeakqualtools/*"
 
     path 'macs3/peaks/*'
     path 'macs3/peaks/*'
