@@ -19,10 +19,10 @@ process MULTIQC {
     path "alignment/library/*"
     path "alignment/library/*"
 
-    path 'alignment/merged_library/unfiltered/*'
-    path 'alignment/merged_library/unfiltered/*'
-    path 'alignment/merged_library/unfiltered/*'
-    path 'alignment/merged_library/unfiltered/picard_metrics/*'
+    path "alignment/merged_library/unfiltered/*"
+    path "alignment/merged_library/unfiltered/*"
+    path "alignment/merged_library/unfiltered/*"
+    path "alignment/merged_library/unfiltered/picard_metrics/*"
 
     path 'alignment/merged_library/filtered/*'
     path 'alignment/merged_library/filtered/*'
