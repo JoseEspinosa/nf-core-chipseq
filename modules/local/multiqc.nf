@@ -39,10 +39,10 @@ process MULTIQC {
     path "phantompeakqualtools/*"
     path "phantompeakqualtools/*"
 
-    path 'macs3/peaks/*'
-    path 'macs3/peaks/*'
-    path 'macs3/annotation/*'
-    path 'macs3/featurecounts/*'
+    path "macs3/peaks/*"
+    path "macs3/peaks/*"
+    path "macs3/annotation/*"
+    path "macs3/featurecounts/*"
 
     path 'deseq2/*'
     path 'deseq2/*'
