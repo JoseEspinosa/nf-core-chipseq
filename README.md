@@ -3,7 +3,9 @@
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/nf-core-chipseq_logo_dark.png">
     <img alt="nf-core/chipseq" src="docs/images/nf-core-chipseq_logo_light.png">
   </picture>
-</h1>[![GitHub Actions CI Status](https://github.com/nf-core/chipseq/actions/workflows/ci.yml/badge.svg)](https://github.com/nf-core/chipseq/actions/workflows/ci.yml)
+</h1>
+
+[![GitHub Actions CI Status](https://github.com/nf-core/chipseq/actions/workflows/ci.yml/badge.svg)](https://github.com/nf-core/chipseq/actions/workflows/ci.yml)
 [![GitHub Actions Linting Status](https://github.com/nf-core/chipseq/actions/workflows/linting.yml/badge.svg)](https://github.com/nf-core/chipseq/actions/workflows/linting.yml)[![AWS CI](https://img.shields.io/badge/CI%20tests-full%20size-FF9900?labelColor=000000&logo=Amazon%20AWS)](https://nf-co.re/chipseq/results)[![Cite with Zenodo](http://img.shields.io/badge/DOI-10.5281/zenodo.3240506-1073c8?labelColor=000000)](https://doi.org/10.5281/zenodo.3240506)
 [![nf-test](https://img.shields.io/badge/unit_tests-nf--test-337ab7.svg)](https://www.nf-test.com)
 
@@ -70,7 +72,7 @@ You can find numerous talks on the [nf-core events page](https://nf-co.re/events
 ## Usage
 
 > [!NOTE]
-> If you are new to Nextflow and nf-core, please refer to [this page](https://nf-co.re/docs/usage/installation) on how to set-up Nextflow.Make sure to [test your setup](https://nf-co.re/docs/usage/introduction#how-to-run-a-pipeline) with `-profile test` before running the workflow on actual data.
+> If you are new to Nextflow and nf-core, please refer to [this page](https://nf-co.re/docs/usage/installation) on how to set-up Nextflow. Make sure to [test your setup](https://nf-co.re/docs/usage/introduction#how-to-run-a-pipeline) with `-profile test` before running the workflow on actual data.
 
 To run on your data, prepare a tab-separated samplesheet with your input data. Please follow the [documentation on samplesheets](https://nf-co.re/chipseq/usage#samplesheet-input) for more details. An example samplesheet for running the pipeline looks as follows:
 
