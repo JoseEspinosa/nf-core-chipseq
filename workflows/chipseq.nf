@@ -130,7 +130,6 @@ workflow CHIPSEQ {
     )
     ch_versions = ch_versions.mix(FASTQ_FASTQC_UMITOOLS_TRIMGALORE.out.versions)
 
-
     //
     // SUBWORKFLOW: Alignment with BWA & BAM QC
     //
@@ -474,9 +473,14 @@ workflow CHIPSEQ {
         ch_ip_control_bam
             .map {
                 meta, ip_bam, control_bam ->
-                    [ meta.antibody, ip_bam ]
+                    [ meta.antibody, meta.single_end, ip_bam ]
             }
             .groupTuple()
+            .map {
+                antibody, single_end, ip_bams ->
+                    def single_end_map = single_end.unique().size() == 1 ? [single_end: single_end[0]] : false
+                    [ antibody, ip_bams, single_end_map ]
+            }
             .set { ch_antibody_bams }
 
         BED_CONSENSUS_QUANTIFY_QC_BEDTOOLS_FEATURECOUNTS_DESEQ2 (
